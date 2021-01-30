@@ -85,9 +85,11 @@ g
 // projection config.
 const projection = d3
   .geoMercator()
-  .center([114.1095, 22.3964])
+  .center([4.3532, 50.8472])
   .scale(80000)
   .translate([WIDTH / 2, HEIGHT / 2]);
+//  .scale(80000)
+//.center([114.1095, 22.3964])
 
 // --------------- Step 3 ---------------
 // Prepare SVG path and color, import the
@@ -98,8 +100,8 @@ const color = d3.scaleOrdinal(d3.schemeCategory20c.slice(1, 4));
 // --------------- Step 4 ---------------
 // 1. Plot the map from data source `hongkong`
 // 2. Place the district name in the map
-renderMap(hongkong);
-
+//renderMap(hongkong);
+renderMap(bruxelles);
 function renderMap(root) {
   // Draw districts and register event listeners
   g
